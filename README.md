@@ -40,9 +40,9 @@ Only the liquid package itself, and the sub-package types that are used in that 
 
 ## Install
 
-`go get gopkg.in/osteele/liquid.v1` # latest snapshot
+`go get gopkg.in/Proximaio/liquid.v1` # latest snapshot
 
-`go get -u github.com/osteele/liquid` # development version
+`go get -u github.com/Proximaio/liquid` # development version
 
 ## Usage
 
@@ -62,7 +62,7 @@ fmt.Println(out)
 
 ### Command-Line tool
 
-`go install gopkg.in/osteele/liquid.v0/cmd/liquid` installs a command-line `liquid` executable.
+`go install gopkg.in/Proximaio/liquid.v0/cmd/liquid` installs a command-line `liquid` executable.
 This is intended to make it easier to create test cases for bug reports.
 
 ```bash
@@ -149,17 +149,17 @@ The [original Liquid engine](https://shopify.github.io/liquid), of course, for t
 
 MIT License
 
-[coveralls-url]: https://coveralls.io/r/osteele/liquid?branch=master
-[coveralls-svg]: https://img.shields.io/coveralls/osteele/liquid.svg?branch=master
+[coveralls-url]: https://coveralls.io/r/Proximaio/liquid?branch=master
+[coveralls-svg]: https://img.shields.io/coveralls/Proximaio/liquid.svg?branch=master
 
-[godoc-url]: https://godoc.org/github.com/osteele/liquid
-[godoc-svg]: https://godoc.org/github.com/osteele/liquid?status.svg
+[godoc-url]: https://godoc.org/github.com/Proximaio/liquid
+[godoc-svg]: https://godoc.org/github.com/Proximaio/liquid?status.svg
 
-[license-url]: https://github.com/osteele/liquid/blob/master/LICENSE
+[license-url]: https://github.com/Proximaio/liquid/blob/master/LICENSE
 [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
 
-[go-report-card-url]: https://goreportcard.com/report/github.com/osteele/liquid
-[go-report-card-svg]: https://goreportcard.com/badge/github.com/osteele/liquid
+[go-report-card-url]: https://goreportcard.com/report/github.com/Proximaio/liquid
+[go-report-card-svg]: https://goreportcard.com/badge/github.com/Proximaio/liquid
 
-[travis-url]: https://travis-ci.org/osteele/liquid
-[travis-svg]: https://img.shields.io/travis/osteele/liquid.svg?branch=master
+[travis-url]: https://travis-ci.org/Proximaio/liquid
+[travis-svg]: https://img.shields.io/travis/Proximaio/liquid.svg?branch=master

@@ -7,8 +7,8 @@ import (
 
 	yaml "gopkg.in/yaml.v2"
 
-	"github.com/osteele/liquid/expressions"
-	"github.com/osteele/liquid/render"
+	"github.com/Proximaio/liquid/expressions"
+	"github.com/Proximaio/liquid/render"
 )
 
 const forloopVarName = "forloop"

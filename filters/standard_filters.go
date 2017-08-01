@@ -14,8 +14,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/osteele/liquid/strftime"
-	"github.com/osteele/liquid/values"
+	"github.com/Proximaio/liquid/strftime"
+	"github.com/Proximaio/liquid/values"
 )
 
 // A FilterDictionary holds filters.

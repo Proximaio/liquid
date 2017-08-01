@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/osteele/liquid/values"
+	"github.com/Proximaio/liquid/values"
 )
 
 func sortFilter(array []interface{}, key interface{}) []interface{} {

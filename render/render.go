@@ -6,7 +6,7 @@ import (
 	"io"
 	"reflect"
 
-	"github.com/osteele/liquid/values"
+	"github.com/Proximaio/liquid/values"
 )
 
 // Render renders the render tree.

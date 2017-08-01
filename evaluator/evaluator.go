@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/osteele/liquid/values"
+	"github.com/Proximaio/liquid/values"
 )
 
 // Convert should be replaced by values.Convert.

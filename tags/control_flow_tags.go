@@ -3,9 +3,9 @@ package tags
 import (
 	"io"
 
-	e "github.com/osteele/liquid/expressions"
-	"github.com/osteele/liquid/render"
-	"github.com/osteele/liquid/values"
+	e "github.com/Proximaio/liquid/expressions"
+	"github.com/Proximaio/liquid/render"
+	"github.com/Proximaio/liquid/values"
 )
 
 type caseInterpreter interface {

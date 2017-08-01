@@ -5,7 +5,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/osteele/liquid/parser"
+	"github.com/Proximaio/liquid/parser"
 	"github.com/stretchr/testify/require"
 )
 
