@@ -1,4 +1,4 @@
-// Package filters defines the standard Liquid filters.
+// Package filters is an internal package that defines the standard Liquid filters.
 package filters
 
 import (
@@ -14,8 +14,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/Proximaio/liquid/strftime"
 	"github.com/Proximaio/liquid/values"
+	"github.com/osteele/tuesday"
 )
 
 // A FilterDictionary holds filters.
@@ -74,7 +74,7 @@ func AddStandardFilters(fd FilterDictionary) { // nolint: gocyclo
 		f := format("%a, %b %d, %y")
 		// TODO %\d*N -> truncated fractional seconds, default 9
 		f = strings.Replace(f, "%N", "", -1)
-		return strftime.Strftime(f, t)
+		return tuesday.Strftime(f, t)
 	})
 
 	// numbers

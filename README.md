@@ -1,13 +1,19 @@
 # Liquid Template Parser
 
- [![][travis-svg]][travis-url] [![][coveralls-svg]][coveralls-url] [![][go-report-card-svg]][go-report-card-url] [![][godoc-svg]][godoc-url] [![][license-svg]][license-url]
+ [![][travis-svg]][travis-url]
+ [![][appveyor-svg]][appveyor-url]
+ [![][coveralls-svg]][coveralls-url]
+ [![][go-report-card-svg]][go-report-card-url]
+ [![][godoc-svg]][godoc-url]
+ [![][license-svg]][license-url]
 
-`liquid` is a Go implementation of [Shopify Liquid templates](https://shopify.github.io/liquid). It was developed for use in the [Gojekyll](https://github.com/osteele/gojekyll) static site generator.
+`liquid` is a pure Go implementation of [Shopify Liquid templates](https://shopify.github.io/liquid).
+It was developed for use in the [Gojekyll](https://github.com/osteele/gojekyll) port of the Jekyll static site generator.
 
 <!-- TOC -->
 
 - [Liquid Template Parser](#liquid-template-parser)
-    - [Differences from Liquid](#differences-from-liquid)
+    - [Compatibility](#compatibility)
     - [Stability](#stability)
     - [Install](#install)
     - [Usage](#usage)
@@ -23,7 +29,7 @@
 
 <!-- /TOC -->
 
-## Differences from Liquid
+## Compatibility
 
 These features of Shopify Liquid aren't implemented:
 
@@ -31,12 +37,18 @@ These features of Shopify Liquid aren't implemented:
 - Non-strict filters. An undefined filter is currently an error.
 - Strict variables. An undefined variable is not an error.
 
+Drops have a different design from the Shopify (Ruby) implementation.
+A Ruby drop sets `liquid_attributes` to a list of attributes that are exposed to Liquid.
+A Go drop implements `ToLiquid() interface{}`, that returns a proxy object.
+Conventionally, the proxy is a `map` or `struct` that defines the exposed properties.
+See <http://godoc.org/github.com/Proximaio/liquid#Drop> for additional information.
+
 ## Stability
 
 This library is at an early stage of development.
 It has been mostly used by its author.
 
-Only the liquid package itself, and the sub-package types that are used in that top-level package, are guaranteed stable. For example, `render.Context` is documented as the parameter type for tag definitions; it therefore won't change incompatibly with minor versions.
+Only the liquid package itself, and the sub-package types that are used in that top-level package, are guaranteed stable. For example, `render.Context` is documented as the parameter type for tag definitions; it therefore won't change incompatibly, if ever, until at least version 2 (at which point `gopkg.in/Proximaio/liquid.v1` will continue to pin to the v1 implementation).
 
 ## Install
 
@@ -163,3 +175,6 @@ MIT License
 
 [travis-url]: https://travis-ci.org/Proximaio/liquid
 [travis-svg]: https://img.shields.io/travis/Proximaio/liquid.svg?branch=master
+
+[appveyor-url]: https://ci.appveyor.com/project/Proximaio/liquid
+[appveyor-svg]: https://ci.appveyor.com/api/projects/status/76tnj36879n671jx?svg=true
